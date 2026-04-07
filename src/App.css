@@ -1,0 +1,101 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-in;
+}
+
+.fade-out {
+  animation: fadeOut 0.6s ease-out;
+}
+
+.movie-card-hover {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.movie-card-hover:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 16px rgba(229, 9, 20, 0.3);
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 20% 20%, #2a2a2a 0%, #111 45%, #000 100%);
+  padding: 24px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(20, 20, 20, 0.92);
+  border: 1px solid #2b2b2b;
+  border-radius: 14px;
+  padding: 32px 28px;
+  text-align: center;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+}
+
+.login-logo {
+  margin: 0;
+  color: #e50914;
+  font-size: 44px;
+  letter-spacing: 2px;
+}
+
+.login-subtitle {
+  margin: 10px 0 26px;
+  color: #cfcfcf;
+  font-size: 15px;
+}
+
+.login-button {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 14px;
+  background: #e50914;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background: #b80811;
+}

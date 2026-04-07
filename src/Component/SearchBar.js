@@ -24,7 +24,7 @@ const SearchBar = ({ data, setFiltered }) => {
     setFiltered(result);
     setSuggestions(result.slice(0, 8));
     setShowSuggestions(true);
-  }, [debouncedQuery, data]);
+  }, [debouncedQuery, data, setFiltered]);
 
   useEffect(() => {
     const handleClickOutside = (e) => {
